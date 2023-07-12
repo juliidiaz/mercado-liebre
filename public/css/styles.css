@@ -13,9 +13,13 @@ body{
 
 /*HEADER*/
 
+header {
+    margin: 0px 10px 0px 10px
+}
+
 .icon-principal {
     width: 30%;
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
 }
 
 .barra-busqueda {
@@ -26,13 +30,12 @@ body{
     font-weight: bold;
     border: darkgray 2px solid;
     width: 50%;
-    margin: 10px;
     border-radius: 10%;
+    margin: 10px 0px 0px 0px;
 }
 
-.fa-search{
-    margin-left: 10px;
-    margin-bottom: 10px;
+.descript-header {
+    display: none;
 }
 
 .text-header {
@@ -46,38 +49,62 @@ body{
 
 .text-header.title {
     text-align: center;
+    margin:15px
 }
 
-.burger-menu {
+.hamburguesa {
     width: 100%;
     text-align: center;
-    margin: 30px;
+    margin: 20px;
+
+}
+
+.hamburguesa-int {
+    background-color: blue;
+    color:white;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10%;
 }
 
 /*MAIN*/
 
 main {
-    background-color: gainsboro
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-titulares {
+    font-family: Roboto;
+    font-size: 22px;
+    margin: 15px;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
 }
 
 .section-main {
-    margin: 15px;
+    width: 90%;;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid #ebebeb;
+    padding: 5px;
     margin-bottom: 10px;
-    border: 1px solid #ebebeb;
 }
 
 .img-ofertas {
-    width: 80%;
+    width: 70%;
 }
 
 .fa-shuttle-van{
     color: forestgreen;
-    margin: 10px 0px 10px 0px;
+    font-size: 25px;
 }
 
 .descript-product{
@@ -106,37 +133,76 @@ main {
     padding: 20px 0px 20px 0px;
     color: grey;
     font-weight: bolder;
+    display: none;
 }
 
 /*FOOTER*/
-
-.section-footer {
-    width: 100%;
+footer {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-footer {
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding:20px
+    margin-top:30px;
+    margin-bottom: 30px;
 }
 
-.fa-credit-card {
+.icon-footer {
     color: blue;
     font-size: xx-large;
-    margin-top: 20px;
+    margin: 10px;
 }
 
 .titulo-footer {
     font-family: roboto;
-    font-weight: bolder;
+    font-weight:bolder;
     font-size: medium;
+    text-align: center;
 }
 
 .text-footer {
+    text-align: center;
     font-family: roboto;
-    font-weight: bolder;
     font-size: smaller;
     text-align: center;
+}
+
+.copyright{
+    font-family: roboto;
+    font-size: small;
+    width: 90%;
+    margin: 10px;
+}
+
+/*BREACKPOINT*/
+
+/*Tablet*/
+@media (min-width: 361px){
+    .descript-header {
+        display: block;
+    }
+    .hamburguesa {
+        display: none;
+    }
+    .text-descripciones {
+        display: block;
+    }
+}
+/*Desktop*/
+@media (min-width: 769px) {
+    .descript-header {
+        display: block;
+    }
+    .hamburguesa {
+        display: none;
+    }
 }
 
 
