@@ -7,43 +7,46 @@ a {
     text-decoration: none;
 }
 
-body{
-    background-color: #EAC926;
-}
-
 /*HEADER*/
 
 header {
-    margin: 0px 10px 0px 10px
+    padding: 15px 15px 15px 15px;
+    background-color: #EAC926;
+}
+
+.header-superior {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .icon-principal {
-    width: 30%;
-    margin: 10px 0px 10px 0px;
+    width: 150px;
 }
 
 .barra-busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
-    color: darkgray;
+    color: rgb(197, 195, 195);
     font-family: roboto;
     font-size: 12px;
     font-weight: bold;
     border: darkgray 2px solid;
-    width: 50%;
+    width: 250px;
+    height: 25px;
     border-radius: 10%;
-    margin: 10px 0px 0px 0px;
-}
-
-.descript-header {
-    display: none;
 }
 
 .text-header {
     font-family: roboto;
     font-weight: bolder;
-    font-size: small;
-    margin-bottom: 10px;
-    margin-right: 5px;
+    font-size: 12px;
+    margin-right: 15px;
     color:black
 }
 
@@ -52,17 +55,32 @@ header {
     margin:15px
 }
 
+.descript-header {
+    display: none;
+}
+
+.ul-ofertas {
+    display: flex;
+}
+
+.ul-loguin {
+    display: flex;
+}
+
+.icon-loguin {
+    font-size: 11px;
+    margin-left: 3px;
+}
+
 .hamburguesa {
-    width: 100%;
     text-align: center;
     margin: 20px;
-
 }
 
 .hamburguesa-int {
     background-color: blue;
     color:white;
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px;
     border-radius: 10%;
 }
@@ -71,48 +89,69 @@ header {
 
 main {
     background-color: gainsboro;
+    padding-bottom: 30px;
+}
+
+.product {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+    gap: 2rem;
 }
 
 .text-titulares {
+    text-align: center;
     font-family: Roboto;
-    font-size: 22px;
-    margin: 15px;
+    font-size: 20px;
     font-weight: bold;
     color: rgb(88, 88, 88);
+    margin: 30px;
 }
 
-.section-main {
-    width: 90%;;
+.article-main {
+    width: 200px; 
+    height: 250px;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #ebebeb;
     padding: 5px;
-    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
 }
+
 
 .img-ofertas {
     width: 70%;
 }
 
-.fa-shuttle-van{
+.box-camioneta {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;    
+}
+
+.icon-camioneta{
+    border: solid 2px forestgreen;
+    border-radius:50%;
+    padding: 9px 5px 9px 5px;
     color: forestgreen;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .descript-product{
     width: 90%;
+    display: block;
+}
+
+.box-precios {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    flex-direction: row;
+    align-items: end;
 }
 
 .text-precios {
@@ -126,8 +165,11 @@ main {
     font-size: 16px;
     color:forestgreen;
     font-weight: bolder;
+    width: 70%;
+    padding-left: 10px;
 }
 .text-descripciones {
+    width: 100%;
     font-family: roboto;
     font-size: 16px;
     padding: 20px 0px 20px 0px;
@@ -139,13 +181,16 @@ main {
 /*FOOTER*/
 footer {
     background-color: white;
+}
+
+.cajas-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .section-footer {
-    width: 70%;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,9 +229,12 @@ footer {
 /*BREACKPOINT*/
 
 /*Tablet*/
-@media (min-width: 361px){
+@media (min-width: 769px){
     .descript-header {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
     .hamburguesa {
         display: none;
@@ -194,17 +242,26 @@ footer {
     .text-descripciones {
         display: block;
     }
+    .article-main {
+        width: 260px;
+        height: auto;
+    }
+    .cajas-footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .section-footer {
+        width: 230px;
+        justify-content:start;
+    }
 }
 /*Desktop*/
-@media (min-width: 769px) {
-    .descript-header {
-        display: block;
-    }
-    .hamburguesa {
-        display: none;
+@media (min-width: 1280px) {
+    .section-footer {
+        width: 315px;
     }
 }
-
 
 
 
