@@ -1,44 +1,57 @@
+.register {
+    background-color: gainsboro;
+}
+
+.title-form-h3{
+    font-family: roboto;
+    width: 90%;
+    text-align: center;
+    padding-top: 15px;
+}
 .form-register{
-    border: solid 2px black;
-    margin: 30px;
-    border-radius: 3%;
-    background-color: rgb(235, 235, 235);
+    padding: 10px 30px 10px 30px;
 }
 
 .sect-form{
     display: flex;
     flex-direction: column;
-    margin: 20px;
     align-items: center;
     justify-content: center;
+    margin: 25px 0px 25px 0px;
 }
 
 .title-form {
-    margin: 5px;
+    font-size: 15px;
     font-family: roboto;
     font-weight: bolder;
-    width: 90%;
     text-align: start;
+    width: 100%;
+    margin-bottom: 5px;
 }
 
 .input-blancos {
     background-color:white;
     border-radius: 7%;
     border-color: transparent;
-    height: 20px;
-    width: 90%;
-    margin: 5px;
+    height: 30px;
+    width: 100%;
 }
 
 .div-checkbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    width: 80%;
+    width: 100%;
     font-family: roboto;
 }
 
 .check{
-    margin: 5px;
+    margin: 7px;
+}
+
+.button-blue{
+    background-color: blue;
+    width: 100%;
+    border: transparent solid 1px;
+    border-radius: 5%;
+    margin: 5px 0px 5px 0px;
+    height: 30px;
+    color: white;
 }
