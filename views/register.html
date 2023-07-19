@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/register.css">
+    <title>Registro</title>
+</head>
+<body>
+    <form action="/register.html" method="post" class="form-register">
+        <div class="sect-form">
+            <label class="title-form" for="nombre">Nombre:</label>
+            <input class="input-blancos" type="text" name="nombre" id="nombre">
+        </div>
+
+        <div class="sect-form">
+            <label class="title-form" for="apellido">Apellido:</label>
+            <input input class="input-blancos" type="text" name="apellido" id="apellido">
+        </div>
+
+        <div class="sect-form">
+            <label class="title-form" for="usuario">Nombre de Usuario:</label>
+            <input input class="input-blancos" type="text" name="usuario" id="usuario">
+        </div>
+
+        <div class="sect-form">
+            <label class="title-form" for="nacimiento">Fecha de nacimiento:</label>
+            <input input class="input-blancos" type="date" name="nacimiento" id="nacimiento">
+        </div>
+
+        <div class="sect-form">
+            <label class="title-form" for="usuario">Quiere comprar o vender?</label>
+            <select class="input-blancos" name="usuario" id="usuario">
+                <option disabled selected>Elija una opción</option>
+                <option value="comprador">Comprador</option>
+                <option value="vendedor">Vendedor</option>
+            </select>
+        </div>
+
+        <div class="sect-form">
+            <label class="title-form" for="intereses">Categorías de interés:</label>
+            <div class="div-checkbox">
+                <div class="check"><input type="checkbox" name="intereses" id="intereses" value="electro"> Electro</div>
+                <div class="check"><input type="checkbox" name="intereses" id="intereses" value="moda"> Moda</div>
+                <div class="check"><input type="checkbox" name="intereses" id="intereses" value="hogar"> Hogar</div>
+                <div class="check"><input type="checkbox" name="intereses" id="intereses" value="Jugueteria"> Juguetería</div>
+                <div class="check"><input type="checkbox" name="intereses" id="intereses" value="sana"> Vida sana</div>
+            </div>
+            
+        </div>
+
+        <div class="sect-form">
+            <label class="title-form" for="perfil">Seleccionar una foto de perfil:</label>
+            <input type="file" name="perfil" id="perfil" accept=".jpg" multiple>
+        </div>
+
+        <div class="sect-form">
+            <label class="title-form" for="contrasena">Contraseña:</label>
+            <input input class="input-blancos" type="password" name="contrasena" id="contrasena">
+        </div>
+
+        <div class="sect-form">
+            <label class="title-form" for="contrasena">Confirmar contraseña:</label>
+            <input input class="input-blancos" type="password" name="contrasena" id="contrasena">
+        </div>
+
+        <button type="submit"><a href="index.html">Enviar</a></button>
+        <button type="reset">Borrar</button>
+
+
+
+
+    </form>    
+</body>
+</html>

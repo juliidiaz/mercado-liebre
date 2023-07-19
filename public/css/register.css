@@ -1,0 +1,44 @@
+.form-register{
+    border: solid 2px black;
+    margin: 30px;
+    border-radius: 3%;
+    background-color: rgb(235, 235, 235);
+}
+
+.sect-form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-form {
+    margin: 5px;
+    font-family: roboto;
+    font-weight: bolder;
+    width: 90%;
+    text-align: start;
+}
+
+.input-blancos {
+    background-color:white;
+    border-radius: 7%;
+    border-color: transparent;
+    height: 20px;
+    width: 90%;
+    margin: 5px;
+}
+
+.div-checkbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 80%;
+    font-family: roboto;
+}
+
+.check{
+    margin: 5px;
+}
