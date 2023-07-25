@@ -27,10 +27,7 @@ header {
     width: 150px;
 }
 
-.barra-busqueda {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#search {
     background-color: white;
     color: rgb(197, 195, 195);
     font-family: roboto;
@@ -38,7 +35,7 @@ header {
     font-weight: bold;
     border: darkgray 2px solid;
     width: 250px;
-    height: 25px;
+    height: 27px;
     border-radius: 10%;
 }
 
@@ -112,17 +109,19 @@ main {
 
 .article-main {
     width: 200px; 
-    height: 250px;
+    height: 260px;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-
 }
-
+    .article-main:hover{
+        .text-descripciones{
+            color: gray;
+        }
+    }
 
 .img-ofertas {
     width: 70%;
@@ -141,11 +140,18 @@ main {
     padding: 9px 5px 9px 5px;
     color: forestgreen;
     font-size: 15px;
+    transition: all 1s;
 }
 
+    .icon-camioneta:hover{
+        rotate: -90deg;
+    }
+
 .descript-product{
-    width: 90%;
-    display: block;
+    width: 100%;
+    border-top: #EAC926 solid 2px;
+    background-color: aquamarine;
+    margin-top: 6px;
 }
 
 .box-precios {
@@ -167,16 +173,20 @@ main {
     font-weight: bolder;
     width: 70%;
     padding-left: 10px;
+    
 }
 .text-descripciones {
     width: 100%;
     font-family: roboto;
     font-size: 16px;
-    padding: 20px 0px 20px 0px;
-    color: grey;
+    padding: 7px 0px 10px 0px;
+    color: transparent;
     font-weight: bolder;
-    display: none;
+    transition: 150ms;
 }
+
+
+
 
 /*FOOTER*/
 footer {
@@ -203,7 +213,12 @@ footer {
     color: blue;
     font-size: xx-large;
     margin: 10px;
+    transition: all 150ms;
 }
+
+    .icon-footer:hover{
+        color: #EAC926;
+    }
 
 .titulo-footer {
     font-family: roboto;
@@ -238,9 +253,6 @@ footer {
     }
     .hamburguesa {
         display: none;
-    }
-    .text-descripciones {
-        display: block;
     }
     .article-main {
         width: 260px;
