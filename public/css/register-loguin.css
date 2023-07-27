@@ -57,12 +57,9 @@
     margin: 0px 0px 20px 0px;
     height: 30px;
     color: white;
-}
-
-.button-enviar{
     transition: 150ms;
 }
-.button-enviar:hover{
+.button-blue:hover{
     background-color:#0022AA;
 }
 
